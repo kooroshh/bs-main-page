@@ -3,17 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Main Page</title>
     <link href="./css/bootstrap.rtl.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     
-    سلام خوبی چه خبر؟    
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        
+                        <a href="#" class="navbar-brand">MAINPAGE</a>
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ms-auto">
+
+                                <li class="nav-item"><a class="nav-link active" href="#home">صفحه اصلی</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#feaatures">مشخصات</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#gallery">گالری</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#pricing">پنل ها</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">ارتباط با ما</a></li>
+                                <li class="nav-item"><a class="btn btn-outline-light" href="#">دانلود</a></li>
+
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-linear" id="home">
+
+        <div class="container mt-5">
+
+            <h1>صفحه هدف اپلیکیشن موبایل</h1>
+            <p class="tagline">در دنیای امروز یکی یادگیری مهارت جدید بسیار آسان شده است،اینبار با اپلیکیشن ما ساده تر از گذشته یاد بگیرید</p>    
+
+        </div>
+        <div class="img-holder mt-3">
+           <img src="/static/images/iphonex.png" alt="Phone" class="img-fluid">
+        </div>
+
+    </header>
+
 
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/bootstrap.esm.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
