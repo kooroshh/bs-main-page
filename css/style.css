@@ -26,12 +26,65 @@ h2{
     margin-bottom: 1.5rem;
 }
 
+h3{
+    color: #633991;
+    font-size: 33px;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #633991;
+}
+
+p{
+    color: #959094;
+}
+
+.light-bg{
+    background-color: #faf6fb;
+}
+
+.section{
+    padding: 80px 0;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title small{
+    color: #998a9b;
+}
+
 .btn{
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
     padding: 0.37rem 1.35rem;
     transition: 0.3s ease;
+}
+
+.btn-primary{
+    border-radius: 3px;
+    background-image: linear-gradient(122deg, #e54595 0%, #fd378e 100%);
+    border: none;
+    box-shadow: 0px 9px 32px 0 rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    padding: 0.6rem 2rem;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:not([disabled]):not(.disabled).active,
+.btn-primary:not([disabled]):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle{
+    background-image: linear-gradient(122deg, #fd378e 0%, #e54595 100%);
+    color: white;
+    box-shadow: 0px 9px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
 .btn-outline-light:hover{
@@ -127,4 +180,64 @@ header{
         padding-bottom: 100%;
     }
 
+}
+
+
+/* ------------------------------------ 
+            Features
+-------------------------------------*/
+
+.gradient-fill::before{
+    color: transparent;
+    background-image: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
+    background-clip: text;
+}
+
+.card.features{
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.04);
+    transition: 0.3s ease;
+}
+
+.card.features::before{
+    content: "";
+    color: #fc73b4;
+    background-image: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
+    position: absolute;
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.card-text{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.card.features:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.08);
+}
+
+
+.box-icon{
+    box-shadow: 0px 0px 43px 0 rgba(0, 0, 0, 0.14);
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 70px;
+    margin-bottom: 1.5rem;
+}
+
+.perspective-phone{
+    position: relative;
+    z-index: -1;
+}
+
+@media (min-width: 992px){
+    .perspective-phone{
+        margin-top: -150px;
+    }
 }
