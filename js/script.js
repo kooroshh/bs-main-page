@@ -30,5 +30,40 @@ document.addEventListener("DOMContentLoaded",()=>{
         navMenu.classList.remove("menu-is-open");
     })
 
+
+    let comments = $(".comments");
+
+    if(comments && $.fn.owlCarousel){
+        comments.owlCarousel({
+            rtl: true,
+            nav: true,
+            items: 1,
+            dots: false,
+            navText: ["<span class='ti-arrow-left'></span>", "<span class='ti-arrow-right'></span>"]
+        });
+    }
+    
+
+    let gallery = $(".img-gallery");
+
+    if(gallery && $.fn.owlCarousel){
+        gallery.owlCarousel({
+            rtl: true,
+            nav: false,
+            items: 3,
+            dots: true,
+            center: true,
+            loop: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 3
+                }
+            }
+        });
+    }
     
 })
