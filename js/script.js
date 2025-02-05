@@ -30,6 +30,21 @@ document.addEventListener("DOMContentLoaded",()=>{
         navMenu.classList.remove("menu-is-open");
     })
 
+    function checkMenu(){
+        if(!(window.innerWidth <= 992)){
+            let navMenu = document.querySelector(".nav-menu");
+            navMenu.classList.remove("menu-is-open");
+
+            let collapse = new bootstrap.Collapse(sideNav, {
+                toggle: false
+            });
+            
+            collapse.hide();
+        }
+    }
+
+    window.addEventListener("resize",checkMenu);
+
 
     let comments = $(".comments");
 
@@ -65,5 +80,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             }
         });
     }
+
+
+
     
 })
